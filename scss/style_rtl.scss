@@ -1,0 +1,39 @@
+body{
+    direction: rtl !important;
+}
+
+.text-left{
+    text-align: right !important;
+}
+
+#section-about .img {
+    right: auto;
+    left: 0;
+}
+
+.owl-carousel .owl-stage-outer{
+    direction: ltr !important;
+}
+
+.navbar-nav.ml-auto{
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+.list-unstyled {
+    padding-right: 0 !important;
+}
+.ftco-footer-social.list-unstyled.float-md-right.float-lft{
+    float: left !important;
+}
+
+.col-md.justify-content-end{
+    text-align: left;
+}
+
+.media.menu-item{
+    .mr-3{
+        margin-right: 0 !important;
+        margin-left: 1rem !important;
+    }
+}

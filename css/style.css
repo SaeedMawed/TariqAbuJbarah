@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5,
   font-family: "Playfair Display", serif;
   font-weight: bold; }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff; }
+
 .text-primary {
   color: #33b66a !important; }
 
@@ -48,6 +51,8 @@ h1, h2, h3, h4, h5,
         padding-bottom: 10px;
         padding-left: 0px;
         padding-right: 0px; } }
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+      color: #33b66a !important; }
   .ftco-navbar-light .navbar-nav > .nav-item.ftco-cta a {
     color: #fff; }
   .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
@@ -106,12 +111,18 @@ h1, h2, h3, h4, h5,
       text-transform: uppercase;
       font-size: 16px;
       letter-spacing: .1em; }
+    .ftco-navbar-light.scrolled .nav-item:hover {
+      background-color: #33b66a !important; }
+      .ftco-navbar-light.scrolled .nav-item:hover .nav-link {
+        color: #fff !important; }
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.7rem !important;
       padding-bottom: 0.7rem !important;
       color: #000 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
         color: #33b66a !important; }
+      .ftco-navbar-light.scrolled .nav-link:hover {
+        color: #fff !important; }
     .ftco-navbar-light.scrolled.awake {
       margin-top: 0px;
       transition: .3s all ease-out; }
@@ -130,9 +141,10 @@ h1, h2, h3, h4, h5,
 
 .ftco-cover {
   height: 100vh;
+  position: relative;
   background-position: center center; }
   .ftco-cover .ftco-heading {
-    font-size: 75px;
+    font-size: 50px;
     line-height: 1.34;
     color: #fff; }
     @media screen and (max-width: 768px) {
@@ -210,6 +222,7 @@ h1, h2, h3, h4, h5,
   margin-bottom: 30px; }
   .menu-item img {
     width: 100px;
+    height: 100px;
     border-radius: 50%; }
   .menu-item .menu-price {
     font-family: "Playfair Display", serif;
@@ -232,10 +245,13 @@ h1, h2, h3, h4, h5,
     .ftco-custom-gutters [class*=col-] .ftco-thumbnail {
       display: block;
       margin-bottom: 5px; }
+      .ftco-custom-gutters [class*=col-] .ftco-thumbnail img {
+        height: 250px; }
       @media screen and (max-width: 768px) {
         .ftco-custom-gutters [class*=col-] .ftco-thumbnail img {
           width: 90% !important;
-          margin-left: 5%; } }
+          margin-left: 5%;
+          margin-right: 5%; } }
 
 .btn {
   border-radius: 4px;
@@ -360,11 +376,49 @@ textarea.form-control {
   margin-top: 0;
   margin-bottom: 30px; }
 
+#section-trailer {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s !important; }
+  #section-trailer video {
+    position: relative;
+    max-width: 900px;
+    outline: none; }
+    @media screen and (max-width: 991px) {
+      #section-trailer video {
+        max-width: 90%; } }
+  #section-trailer .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px; }
+  #section-trailer.active {
+    visibility: visible;
+    opacity: 1; }
+
 #section-about {
-  padding: 8em 0; }
+  padding: 8em 0;
+  margin-bottom: 20px; }
   #section-about .img {
     position: absolute;
-    right: 0; }
+    right: 0;
+    padding: 0; }
+    #section-about .img img {
+      max-height: 500px;
+      width: 100%; }
     @media screen and (max-width: 768px) {
       #section-about .img {
         position: relative;
