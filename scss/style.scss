@@ -8,6 +8,7 @@ $sm: 576px;
 $white: #fff;
 $black: #000;
 $primary: #33b66a;
+$secondary:#ee801f;
 html {
 	overflow-x: hidden;
 }
@@ -29,16 +30,24 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
 	line-height: 1.45;
-	color: $black;
+	color: $secondary;
 	font-family: $font-serif;
 	font-weight: bold;
+}
+
+h4 , .h4 {
+	color: $primary !important;
+}
+
+p{
+	color: $black !important;
 }
 
 .navbar-dark .navbar-nav .nav-link{
 	color: #fff;
 }
 .text-primary {
-	color: $primary !important;
+	color: $secondary !important;
 }
 
 .ftco-navbar-light {
@@ -60,6 +69,7 @@ h1, h2, h3, h4, h5,
 				padding-bottom: 30px;
 				padding-left: 20px;
 				padding-right: 20px;
+				letter-spacing: 1.5px !important;
 				@media screen and (max-width: $lg) {
 					padding-top: 10px;
 					padding-bottom: 10px;
@@ -166,6 +176,7 @@ h1, h2, h3, h4, h5,
 			color: $black!important;
 			&.active {
 				color: $primary!important;
+				font-weight: bolder;
 			}
 
 			&:hover{
@@ -191,6 +202,7 @@ h1, h2, h3, h4, h5,
 .navbar-brand {
 	text-transform: uppercase;
 	letter-spacing: .1em;
+	font-size: 1.5rem;
 }
 
 .bg-image {
@@ -563,7 +575,7 @@ textarea.form-control {
 }
 
 .ftco-bg-dark {
-	background: #3c312e;
+	background: #000;
 }
 
 .ftco-footer {
@@ -578,7 +590,7 @@ textarea.form-control {
 		}
 	}
 	p {
-		color: rgba($white, .3);
+		color: rgba($white, 1) !important;
 	}
 	a {
 		color: rgba($white, .3);

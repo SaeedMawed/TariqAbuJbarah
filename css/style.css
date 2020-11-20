@@ -18,15 +18,21 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.45;
-  color: #000;
+  color: #ee801f;
   font-family: "Playfair Display", serif;
   font-weight: bold; }
+
+h4, .h4 {
+  color: #33b66a !important; }
+
+p {
+  color: #000 !important; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff; }
 
 .text-primary {
-  color: #33b66a !important; }
+  color: #ee801f !important; }
 
 .ftco-navbar-light {
   background: transparent !important;
@@ -44,7 +50,8 @@ h1, h2, h3, h4, h5,
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    letter-spacing: 1.5px !important; }
     @media screen and (max-width: 960px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-top: 10px;
@@ -120,7 +127,8 @@ h1, h2, h3, h4, h5,
       padding-bottom: 0.7rem !important;
       color: #000 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
-        color: #33b66a !important; }
+        color: #33b66a !important;
+        font-weight: bolder; }
       .ftco-navbar-light.scrolled .nav-link:hover {
         color: #fff !important; }
     .ftco-navbar-light.scrolled.awake {
@@ -133,7 +141,8 @@ h1, h2, h3, h4, h5,
 
 .navbar-brand {
   text-transform: uppercase;
-  letter-spacing: .1em; }
+  letter-spacing: .1em;
+  font-size: 1.5rem; }
 
 .bg-image, .ftco-cover {
   background-size: cover;
@@ -433,7 +442,7 @@ textarea.form-control {
   padding: 7em 0; }
 
 .ftco-bg-dark {
-  background: #3c312e; }
+  background: #000; }
 
 .ftco-footer {
   font-size: 16px; }
@@ -443,7 +452,7 @@ textarea.form-control {
   .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal; }
   .ftco-footer p {
-    color: rgba(255, 255, 255, 0.3); }
+    color: white !important; }
   .ftco-footer a {
     color: rgba(255, 255, 255, 0.3); }
     .ftco-footer a:hover {
