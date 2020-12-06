@@ -7,7 +7,8 @@ $md: 768px;
 $sm: 576px;
 $white: #fff;
 $black: #000;
-$primary: #33b66a;
+//$primary: #33b66a;
+$primary:#3d624b;
 $secondary:#ee801f;
 html {
 	overflow-x: hidden;
@@ -34,7 +35,8 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
     color: #e3e3e3 !important;
-    text-shadow: 2px 2px 3px #ee801f;
+	//text-shadow: 2px 2px 3px #ee801f;
+	font-size: 17px;
 }
 
 #section-gallery{
@@ -160,7 +162,7 @@ p{
 
 	&.navbar-shadow {
 
-	box-shadow: 0 1px 4px $primary;
+		box-shadow: 0 -2px 7px $primary;
 	}
 	&.scrolled  {
 		position: fixed;
@@ -593,7 +595,7 @@ textarea.form-control {
 	padding: 8em 0 10em 0;
 	//min-height: 600px;
 	margin-bottom: 20px;
-	//background-image: url(./images/about_img_1.jpg);
+
 	.img {
 		position: absolute;
 		right: 0;
@@ -612,20 +614,23 @@ textarea.form-control {
 	}
 }
 
-#section-franchising {
-	padding: 0;
+#section-ceo {
+	padding: 4em 0;
 	//min-height: 600px;
 	margin-bottom: 20px;
-
+	background-image: url(./images/about_img_1.jpg) !important;
+	background-size: cover;
+	background-attachment: fixed;
 	direction: rtl ;
 	h4 , p{
 		text-align: left;
 	}
 
 	.img {
-		position: absolute;
+		/*position: absolute;
 		left: 0;
 		padding: 0;
+		*/
 		img{
 			max-height: 500px;
 			width: 100%;
