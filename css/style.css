@@ -450,8 +450,7 @@ textarea.form-control {
 
 #section-about {
   padding: 8em 0 10em 0;
-  margin-bottom: 20px;
-  background-image: url(./images/about_img_1.jpg); }
+  margin-bottom: 20px; }
   #section-about .img {
     position: absolute;
     right: 0;
