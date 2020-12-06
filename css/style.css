@@ -466,7 +466,7 @@ textarea.form-control {
           max-width: 100%; } }
 
 #section-franchising {
-  padding: 8em 0;
+  padding: 0;
   margin-bottom: 20px;
   direction: rtl; }
   #section-franchising h4, #section-franchising p {
@@ -490,7 +490,7 @@ textarea.form-control {
   padding: 12em 0; }
 
 .ftco-section {
-  padding: 7em 0; }
+  padding: 0; }
 
 .ftco-bg-dark {
   background: #000; }
