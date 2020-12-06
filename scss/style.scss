@@ -14,11 +14,38 @@ html {
 }
 body {
 	font-family: $font-sans-serif;
-	background: $white;
+	//font-family: Futura Medium;
+	background: $black;
 	font-size: 16px;
 	line-height: 1.6;
-	color: darken(#ccc, 8%);
+	//color: darken(#ccc, 8%);
+	color: $white;
 }
+/* Saeed changes */
+
+.bg-light,.bg-white{
+	background-color: $black !important;
+	background: $black !important;
+}
+
+.ceo-msg {
+    font-style: italic;
+    font-family: initial;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #e3e3e3 !important;
+    text-shadow: 2px 2px 3px #ee801f;
+}
+
+#section-gallery{
+	img{
+		&:hover{
+			opacity: 1 !important;
+			transition: all 1.25s !important;
+		}
+	}
+}
+/* End Saeed changes */
 a {
 	transition: .3s all ease;
 	color: $primary;
@@ -33,14 +60,24 @@ h1, h2, h3, h4, h5,
 	color: $secondary;
 	font-family: $font-serif;
 	font-weight: bold;
+	font-style: italic;
+}
+img{
+	opacity: .5;
 }
 
 h4 , .h4 {
 	color: $primary !important;
+	font-style: italic;
+
 }
 
 p{
-	color: $black !important;
+	color: $white !important;
+}
+
+.contact {
+	display: block;
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -123,7 +160,7 @@ p{
 
 	&.navbar-shadow {
 
-	box-shadow: 0 1px 4px #000;
+	box-shadow: 0 1px 4px $primary;
 	}
 	&.scrolled  {
 		position: fixed;
@@ -131,7 +168,7 @@ p{
 		left: 0;
 		top: 0;
 		margin-top: -130px;
-		background: $white!important;
+		background: $black !important;
 
 		.navbar-nav {
 			@media screen and (max-width: $md) {
@@ -163,7 +200,11 @@ p{
 		}
 		.nav-item{
 			&:hover{
-				background-color: $primary !important;
+				//background-color: $primary !important;
+				//border: 1px solid $primary;
+				//border-radius: 15px;
+				text-shadow: 2px 2px 11px #f9fffb;
+				font-weight: bolder;
 				.nav-link {
 					color :$white !important;
 				}
@@ -173,7 +214,7 @@ p{
 		.nav-link {
 			padding-top: .7rem!important;
 			padding-bottom: .7rem!important;
-			color: $black!important;
+			color: $white!important;
 			&.active {
 				color: $primary!important;
 				font-weight: bolder;
@@ -231,8 +272,9 @@ p{
 		font-family: $font-sans-serif;
 	}
   .btn {
+	  	max-width: 150px !important;
 		@media screen and (max-width: $md) {
-			width: 100%!important;
+			width: 150px !important;
 			border: 1px solid red;
 		}
 	}
@@ -329,7 +371,8 @@ p{
 }
 
 .bg-light {
-	background: #f1efed!important;
+	//background: #f1efed!important;
+	background: $black !important;
 }
 
 .ftco-custom-gutters {
@@ -523,6 +566,7 @@ textarea.form-control {
 		position: relative;
 		max-width: 900px;
 		outline: none;
+		width: 90%;
 		@media screen and (max-width:991px){
 			max-width: 90%;
 		}
@@ -546,9 +590,10 @@ textarea.form-control {
 }
 
 #section-about {
-	padding: 8em 0;
+	padding: 8em 0 10em 0;
 	//min-height: 600px;
 	margin-bottom: 20px;
+	background-image: url(./images/about_img_1.jpg);
 	.img {
 		position: absolute;
 		right: 0;
@@ -566,7 +611,37 @@ textarea.form-control {
 		}
 	}
 }
+
+#section-franchising {
+	padding: 8em 0;
+	//min-height: 600px;
+	margin-bottom: 20px;
+
+	direction: rtl ;
+	h4 , p{
+		text-align: left;
+	}
+
+	.img {
+		position: absolute;
+		left: 0;
+		padding: 0;
+		img{
+			max-height: 500px;
+			width: 100%;
+		}
+		@media screen and (max-width: $md) {
+			position: relative;
+			left: inherit;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
 #section-offer {
+	display: none;
 	padding: 12em 0;
 }
 
@@ -698,7 +773,7 @@ textarea.form-control {
 	}
 }
 .ftco-media {
-	background: $white;
+	background: $black;
 	border-radius: 0px;
 	&.text-center {
 		.ftco-icon {
@@ -720,9 +795,11 @@ textarea.form-control {
 .ftco-owl {
 	position: relative;
 	z-index: 1;
+	/*
 	.owl-dots, .owl-nav {
 
 	}
+	*/
 	.owl-nav {
 		position: absolute;
 		top: 50%;
@@ -848,7 +925,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
+  //-webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
