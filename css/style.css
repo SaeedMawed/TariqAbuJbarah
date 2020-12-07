@@ -25,6 +25,9 @@ body {
   opacity: 1 !important;
   transition: all 1.25s !important; }
 
+img.mfp-img {
+  opacity: 1 !important; }
+
 /* End Saeed changes */
 a {
   transition: .3s all ease;
@@ -41,8 +44,12 @@ h1, h2, h3, h4, h5,
   font-weight: bold;
   font-style: italic; }
 
-img {
+#section-gallery img, #section-ceo img {
   opacity: .5; }
+
+#section-branches img {
+  height: 300px;
+  width: 300px; }
 
 h4, .h4 {
   color: #3d624b !important;
