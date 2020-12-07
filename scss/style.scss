@@ -45,6 +45,8 @@ body {
 			opacity: 1 !important;
 			transition: all 1.25s !important;
 		}
+
+
 	}
 }
 img.mfp-img {
@@ -69,7 +71,7 @@ h1, h2, h3, h4, h5,
 }
 #section-gallery,#section-ceo{
 	img{
-		opacity: .5;
+		opacity: .4;
 	}
 }
 
@@ -631,9 +633,10 @@ textarea.form-control {
 	padding: 4em 0;
 	//min-height: 600px;
 	margin-bottom: 20px;
-	background-image: url(./images/about_img_1.jpg) !important;
+	/*background-image: url(./images/about_img_1.jpg) !important;
 	background-size: cover;
 	background-attachment: fixed;
+	*/
 	direction: rtl ;
 	h4 , p{
 		text-align: left;
@@ -656,6 +659,9 @@ textarea.form-control {
 			}
 		}
 	}
+}
+#section-home{
+	background-attachment: fixed;
 }
 
 #section-offer {
