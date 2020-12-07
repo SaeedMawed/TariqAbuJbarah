@@ -514,6 +514,8 @@ textarea.form-control {
     font-weight: normal; }
   .ftco-footer p {
     color: white !important; }
+  .ftco-footer li.py-2 {
+    color: rgba(255, 255, 255, 0.3) !important; }
   .ftco-footer a {
     color: rgba(255, 255, 255, 0.3); }
     .ftco-footer a:hover {
