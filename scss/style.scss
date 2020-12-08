@@ -358,6 +358,34 @@ p{
 			right: 0;
 		}
 	}
+	span {
+		display: inline-block;
+		animation-name: rotateY;
+		animation-duration: 5s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		@media only screen and (min-width: 768px) {
+			color: #fff !important;
+		}
+	}
+	span:nth-child(1) {
+		animation-delay: 0s;
+	}
+	span:nth-child(2) {
+		animation-delay: .7s;
+	}
+	span:nth-child(3) {
+		animation-delay: 1.4s;
+	}
+	span:nth-child(4) {
+		animation-delay: 2.1s;
+	}
+	span:nth-child(5) {
+		animation-delay: 2.8s;
+	}
+	span:nth-child(6) {
+		animation-delay: 3.5s;
+	}
 	.ftco-vh-100 {
 		min-height: 700px!important;
 	}
@@ -1121,4 +1149,14 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+
+
+/* Keyframes */
+@keyframes rotateY {
+    0%,
+    80% {
+        transform: rotateY(360deg);
+    }
 }
