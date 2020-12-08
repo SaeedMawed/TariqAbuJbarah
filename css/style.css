@@ -28,6 +28,11 @@ body {
 img.mfp-img {
   opacity: 1 !important; }
 
+.made-by {
+  text-align: right;
+  color: #ee801f !important;
+  letter-spacing: 1px; }
+
 /* End Saeed changes */
 a {
   transition: .3s all ease;
@@ -455,8 +460,10 @@ textarea.form-control {
     opacity: 1; }
 
 #section-about {
-  padding: 8em 0 10em 0;
   margin-bottom: 20px; }
+  @media screen and (min-width: 1200px) {
+    #section-about {
+      padding: 8em 0 10em 0; } }
   #section-about .img {
     position: absolute;
     right: 0;
@@ -481,6 +488,8 @@ textarea.form-control {
   direction: rtl; }
   #section-ceo h4, #section-ceo p {
     text-align: left; }
+  #section-ceo .row-reverse {
+    flex-direction: row-reverse; }
   #section-ceo .img {
     /*position: absolute;
     left: 0;
@@ -524,6 +533,16 @@ textarea.form-control {
     color: rgba(255, 255, 255, 0.3); }
     .ftco-footer a:hover {
       color: #53a272; }
+  .ftco-footer .facebook a {
+    color: #fff;
+    background: #385898 !important; }
+  .ftco-footer .instagram a {
+    color: #fff;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); }
   .ftco-footer .ftco-heading {
     font-size: 24px; }
   .ftco-footer .ftco-heading-2 {
