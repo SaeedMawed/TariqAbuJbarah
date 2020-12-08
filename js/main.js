@@ -1,8 +1,13 @@
+$(window).on("load", function () {
+	$("#ftco-loader").fadeOut(1000);
+	$('#ftco-loader').removeClass('show');
+  });
 $(document).ready(function($) {
 
 	"use strict";
 
 	// loader
+	/*
 	var loader = function() {
 		setTimeout(function() {
 			if($('#ftco-loader').length > 0) {
@@ -11,6 +16,8 @@ $(document).ready(function($) {
 		}, 1);
 	};
 	loader();
+	*/
+
 
 	var carousel = function() {
 		$('.owl-carousel').owlCarousel({
