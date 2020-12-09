@@ -368,6 +368,9 @@ p{
 		@media only screen and (min-width: 768px) {
 			color: #fff !important;
 		}
+		@media only screen and (max-width:767px){
+			font-size: smaller !important;
+		}
 	}
 
 	span:nth-child(1) {

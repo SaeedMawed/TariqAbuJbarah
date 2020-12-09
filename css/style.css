@@ -260,6 +260,9 @@ p {
     @media only screen and (min-width: 768px) {
       .ftco-cover span {
         color: #fff !important; } }
+    @media only screen and (max-width: 767px) {
+      .ftco-cover span {
+        font-size: smaller !important; } }
   .ftco-cover span:nth-child(1) {
     animation-delay: 0s; }
   .ftco-cover span:nth-child(2) {
