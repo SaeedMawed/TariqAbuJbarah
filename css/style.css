@@ -49,6 +49,10 @@ img.mfp-img {
     position: relative;
     z-index: 1000; }
 
+.fa-phone {
+  rotate: 115deg;
+  padding: 0 2px; }
+
 /* End Saeed changes */
 a {
   transition: .3s all ease;
