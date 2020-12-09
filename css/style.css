@@ -255,7 +255,8 @@ p {
     animation-name: rotateY;
     animation-duration: 5s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite; }
+    animation-iteration-count: infinite;
+    text-shadow: 0 5px 5px #ee801f, 0 -5px 5px #ee801f; }
     @media only screen and (min-width: 768px) {
       .ftco-cover span {
         color: #fff !important; } }

@@ -364,15 +364,19 @@ p{
 		animation-duration: 5s;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
+		text-shadow: 0 5px 5px $secondary, 0 -5px 5px $secondary;
 		@media only screen and (min-width: 768px) {
 			color: #fff !important;
 		}
 	}
+
 	span:nth-child(1) {
 		animation-delay: 0s;
+
 	}
 	span:nth-child(2) {
 		animation-delay: .7s;
+
 	}
 	span:nth-child(3) {
 		animation-delay: 1.4s;
@@ -1131,6 +1135,7 @@ textarea.form-control {
 }
 
 @keyframes loader-rotate {
+
   100% {
     transform: rotate(360deg);
   }
@@ -1158,5 +1163,6 @@ textarea.form-control {
     0%,
     80% {
         transform: rotateY(360deg);
-    }
+	}
+
 }
