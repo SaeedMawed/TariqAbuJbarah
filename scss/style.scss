@@ -97,6 +97,12 @@ a {
 		color: $primary;
 	}
 }
+
+a:active, a:focus {
+	outline: 0 !important;
+	border: none !important;
+	-moz-outline-style: none !important;
+  }
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
 	line-height: 1.45;
@@ -141,6 +147,12 @@ p{
 }
 .text-secondary{
 	color: $secondary !important;
+}
+.font-normal{
+	font-style: normal !important;
+	color: $primary !important;
+	font-weight: 700 !important;
+	font-size: 16px !important;
 }
 
 .ftco-navbar-light {
@@ -800,6 +812,30 @@ textarea.form-control {
 			background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 
+		}
+	}
+
+	.snapchat{
+		a{
+			background: #FFFC00 !important;
+			color: #fff;
+		}
+	}
+	.mail{
+		a{
+			background:
+    -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%,
+    /* rgba(255, 255, 255, 0.3) 30%, */
+    rgba(255, 255, 255, 0.1) 100%);
+  background:-o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%,
+    /* rgba(255, 255, 255, 0.2) 30%, */
+    rgba(255, 255, 255, 0.1) 100%);
+  background:-webkit-gradient(
+    linear, left top, left bottom, color-stop(0%,
+    rgba(255, 255, 255, 0.3)),
+    /* color-stop(30%, rgba(255, 255, 255, 0.2)), */
+    color-stop(100%, rgba(255, 255, 255, 0.1)));
+			color: #fff;
 		}
 	}
 

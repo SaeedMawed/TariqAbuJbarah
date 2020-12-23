@@ -1,22 +1,11 @@
 $(window).on("load", function () {
-	$("#ftco-loader").fadeOut(1000);
-	$('#ftco-loader').removeClass('show');
+	$(".ftco-loader").fadeOut(1000);
+	$('.ftco-loader').removeClass('show');
   });
+
 $(document).ready(function($) {
 
 	"use strict";
-
-	// loader
-	/*
-	var loader = function() {
-		setTimeout(function() {
-			if($('#ftco-loader').length > 0) {
-				$('#ftco-loader').removeClass('show');
-			}
-		}, 1);
-	};
-	loader();
-	*/
 
 
 	var carousel = function() {
