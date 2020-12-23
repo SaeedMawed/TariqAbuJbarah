@@ -1,6 +1,6 @@
 $(window).on("load", function () {
-	$(".ftco-loader").fadeOut(1000);
-	$('.ftco-loader').removeClass('show');
+	$("#ftco-loader").fadeOut(1000);
+	$('#ftco-loader').removeClass('show');
   });
 
 $(document).ready(function($) {
