@@ -6,7 +6,7 @@ $lg: 960px;
 $md: 768px;
 $sm: 576px;
 $white: #fff;
-$black: #000;
+$black: #181818;
 //$primary: #33b66a;
 $primary:#53a272;
 $secondary:#ee801f;
@@ -63,7 +63,7 @@ img.mfp-img {
 
 /*change background*/
 #section-home {
-	background-size: 100% 100%;
+	//background-size: 100% 100%;
 	.swiper-container{
 		width: 100%;
 		height: 100%;
@@ -72,7 +72,11 @@ img.mfp-img {
 		top: 0;
 		opacity: .8;
 		.swiper-slide{
-			background-size: 100% 100%;
+			//background-size: 100% 100%;
+			background-size: cover;
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
 		}
 	}
 	.main-container{
@@ -769,7 +773,7 @@ textarea.form-control {
 }
 
 .ftco-bg-dark {
-	background: #000;
+	background: $black;
 }
 
 .ftco-footer {

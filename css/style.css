@@ -3,15 +3,15 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
-  background: #000;
+  background: #181818;
   font-size: 16px;
   line-height: 1.6;
   color: #fff; }
 
 /* Saeed changes */
 .bg-light, .bg-white {
-  background-color: #000 !important;
-  background: #000 !important; }
+  background-color: #181818 !important;
+  background: #181818 !important; }
 
 .ceo-msg {
   font-style: italic;
@@ -34,20 +34,21 @@ img.mfp-img {
   letter-spacing: 1px; }
 
 /*change background*/
-#section-home {
-  background-size: 100% 100%; }
-  #section-home .swiper-container {
-    width: 100%;
+#section-home .swiper-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .8; }
+  #section-home .swiper-container .swiper-slide {
+    background-size: cover;
     height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: .8; }
-    #section-home .swiper-container .swiper-slide {
-      background-size: 100% 100%; }
-  #section-home .main-container {
-    position: relative;
-    z-index: 1000; }
+    background-position: center;
+    background-repeat: no-repeat; }
+#section-home .main-container {
+  position: relative;
+  z-index: 1000; }
 
 .fa-phone {
   rotate: 115deg;
@@ -114,7 +115,7 @@ p {
   z-index: 100000; }
   @media screen and (max-width: 991px) {
     .ftco-navbar-light {
-      background: #000 !important;
+      background: #181818 !important;
       top: 0;
       position: relative; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
@@ -171,7 +172,7 @@ p {
     left: 0;
     top: 0;
     margin-top: -130px;
-    background: #000 !important; }
+    background: #181818 !important; }
     @media screen and (max-width: 768px) {
       .ftco-navbar-light.scrolled .navbar-nav {
         background: none;
@@ -259,7 +260,7 @@ p {
     position: relative; }
     .ftco-cover.overlay:before {
       content: "";
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(24, 24, 24, 0.6);
       position: absolute;
       top: 0;
       left: 0;
@@ -308,7 +309,7 @@ p {
     width: 120%;
     height: 200px;
     left: -10%;
-    background: #f2f2f2;
+    background: white;
     transform: rotate(-5deg);
     content: "";
     position: absolute;
@@ -342,7 +343,7 @@ p {
     font-size: 37px; } }
 
 .bg-light {
-  background: #000 !important; }
+  background: #181818 !important; }
 
 .ftco-custom-gutters {
   margin-left: -10px;
@@ -406,17 +407,17 @@ p {
     .btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active {
       background: #fff;
       border-color: #fff;
-      color: #000; }
+      color: #181818; }
 
 .form-control {
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(24, 24, 24, 0.2);
   height: 55px !important;
   background: #fff !important;
-  color: #000 !important;
+  color: #181818 !important;
   font-size: 18px;
   border-radius: 0px; }
   .form-control:focus, .form-control:active {
-    border: 2px solid #000; }
+    border: 2px solid #181818; }
 
 textarea.form-control {
   height: inherit !important; }
@@ -465,7 +466,7 @@ textarea.form-control {
       .ftco-tab-nav li a.active {
         background: none !important;
         color: black !important;
-        border: 2px solid #000; }
+        border: 2px solid #181818; }
 
 .ftco-animate {
   opacity: 0;
@@ -576,7 +577,7 @@ textarea.form-control {
   padding: 4em 0; }
 
 .ftco-bg-dark {
-  background: #000; }
+  background: #181818; }
 
 .ftco-footer {
   font-size: 16px; }
@@ -643,7 +644,7 @@ textarea.form-control {
     font-size: 20px;
     top: -1.5em; }
   .ftco-pricing .ftco-price-per strong {
-    color: #000; }
+    color: #181818; }
   .ftco-pricing .ftco-price-per span {
     font-size: 20px; }
 .ftco-pricing ul li {
@@ -683,7 +684,7 @@ textarea.form-control {
     color: #53a272; }
 
 .ftco-media {
-  background: #000;
+  background: #181818;
   border-radius: 0px; }
   .ftco-media.text-center .ftco-icon {
     margin: 0 auto; }
@@ -769,7 +770,7 @@ textarea.form-control {
 #reservationModal .modal-content {
   border-radius: 0; }
   #reservationModal .modal-content label {
-    color: #000; }
+    color: #181818; }
   #reservationModal .modal-content .modal-body {
     padding: 0; }
   #reservationModal .modal-content .bg-image, #reservationModal .modal-content .ftco-cover {
