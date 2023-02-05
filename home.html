@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html>
   <head>
     <title>Tariq Abu Jbarah</title>
     <meta charset="utf-8">
@@ -16,11 +15,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 
     <link rel="stylesheet" href="css/animate.css">
-
     <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/swiper.css">
 
 	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css">
@@ -38,12 +38,12 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="#section-home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#section-about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#section-ourstory" class="nav-link">About</a></li>
             <li class="nav-item"><a href="#section-offer" class="nav-link d-none">Offer</a></li>
-            <li class="nav-item d-none"><a href="#section-menu" class="nav-link">Menu</a></li>
             <li class="nav-item"><a href="#section-branches" class="nav-link">Branches</a></li>
             <li class="nav-item d-none"><a href="#section-ceo" class="nav-link">CEO'S MESSAGE</a></li>
             <li class="nav-item"><a href="#section-gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="menu" class="nav-link" target="_blank">Menu</a></li>
             <li class="nav-item contact d-none"><a href="#section-contact" class="nav-link">Contact</a></li>
       		<li class="nav-item d-none"><a href="home-ar.html" class="nav-link">Arabic</a></li>
 
@@ -74,25 +74,29 @@
               <span>Restaurants</span>
             </h1>
             <h2 class="h5 ftco-subheading mb-5 ftco-animate d-none">Check out our menu for a variety of delicious food to satisfy all your cravings!</h2>
-
-           <a href="#" class="btn btn-outline-white btn-lg ftco-animate text-capitalize my-5" onclick="toggle();">play video</a>
+            <!--
+            <a href="#" class="btn btn-outline-white btn-lg ftco-animate text-capitalize my-5" onclick="toggle();">play video</a>
+            -->
           </div>
 
         </div>
       </div>
     </section>
     <!-- END section -->
+    <!--
     <section class="ftco-trailer" id="section-trailer">
     	<video  controls="true" id="myvideo" src="/videos/video.mp4" type="video/mp4">
 		</video>
 		<img src="/images/close.png" class="close" id="close"  onclick="toggle();"/>
+    -->
     </section>
+
+
     <!-- Start about us section -->
     <section class="ftco-section bg-light" id="section-about">
       <div class="container">
         <div class="row">
-          <div class="col-md-5 ftco-animate mb-5">
-            <h2 class="ftco-primary-title display-4">Our Story</h2>
+          <div class="col-md-5 ftco-animate ">
             <h4 class="ftco-sub-title">Welcome</h4>
 
             <p>Tariq Abu Jbarah Restaurant - Erbil</p>
@@ -109,6 +113,49 @@
       </div>
     </section>
     <!-- END section -->
+
+    <!-- Our Story -->
+    <section class="ftco-section bg-light" id="section-ourstory">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ftco-animate mb-5">
+            <h2 class="ftco-primary-title display-4">Our Story</h2>
+            <p class="text-left ftco-animate" data-animate-effect="fadeInRight">Our story has begun in the early 1984 in Amman; the capital of Jordan, particularly in  Al-Baider area. Where our father Alhajj Ahmad Abu Jbara began creating and inventing the most delicious ingredients and recipes for our own.
+            </p>
+            <p class="text-left ftco-animate" data-animate-effect="fadeInLeft">
+              As we today serve you our family legacy and lovely meals in all our branches at a high level of accuracy.
+            </p>
+            <p class="text-left ftco-animate" data-animate-effect="fadeInRight">
+              Our insistence on arriving at the top is the beginning of continuous hard work, giving us superiority in both local and global markets.
+              we have expanded and released some new branches in different regions in the Hashemite Kingdom of Jordan all the way to the neighboring countries, to fulfill our clients' wishes and to achieve our ambitions in reaching as many foreign branches as possible inside the Arab world and the Middle East.
+            </p>
+            <p class="text-left ftco-animate" data-animate-effect="fadeInLeft">
+              In our group, we make sure to adhere to quality and the highest standards of accuracy and attention in choosing the main ingredients to prepare food, hygiene, and integrated health in our kitchens.
+              From Amman to everywhere we will remain the ancient origin and our story will be told by future generations to continue our journey.
+            </p>
+            <p class="text-left ftco-animate" data-animate-effect="fadeInRight">
+              Our ambition is to reach all world countries and take our oriental flavors to the top.
+              Tariq Abu Jabara group is entitled to distinction, creativity, and access to the hearts of all classes of society in all its spectrum and to serve them.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-0"></div>
+          <div class="col-md-6 col-xs 12">
+            <h4 class="mb-2 text-left text-white ftco-animate">
+              Chairman of Board of Directors
+              </h4>
+              <h4 class="mb-2 text-left text-white ftco-animate">
+                Group General Manager
+              </h4>
+              <h4 class="mb-2 text-left text-white ftco-animate">
+                Mr. Tariq Ahmed Abu Jbara
+              </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end our story-->
 
     <!-- start offer section -->
     <!-- END section -->
@@ -153,7 +200,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="media d-block mb-4 text-center ftco-media ftco-animate">
-              <img src="images/opening-soon.jpg" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/branch-3.webp" alt="Tariq abu jbarah" class="img-fluid">
               <div class="media-body p-md-5 p-4">
                 <h5 class="mt-0 h4">Tariq Abu Jbarah 3<h5 class="branch-name">Erbil</h5></h5>
                 <p class="mb-4">Ankawa - tow side</p>
@@ -169,7 +216,6 @@
                 <h5 class="mt-0 h4">Tariq Abu Jbarah <h5 class="branch-name">Baghdad</h5></h5>
                 <p class="mb-4">Coming Soon</p>
 
-
               </div>
             </div>
           </div>
@@ -179,8 +225,6 @@
               <div class="media-body p-md-5 p-4">
                 <h5 class="mt-0 h4">Tariq Abu Jbarah  <h5 class="branch-name">Sulaymaniyah</h5></h5>
                 <p class="mb-4">Coming Soon</p>
-
-
               </div>
             </div>
           </div>
@@ -190,8 +234,6 @@
               <div class="media-body p-md-5 p-4">
                 <h5 class="mt-0 h4">Tariq Abu Jbarah <h5 class="branch-name">Duhok</h5></h5>
                 <p class="mb-4">Coming Soon</p>
-
-
               </div>
             </div>
           </div>
@@ -250,78 +292,78 @@
 
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_1.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_1.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_1.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_2.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_2.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_2.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_3.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_3.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_3.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
 
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_4.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_4.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_4.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_5.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_5.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_5.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_6.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_6.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_6.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
 		  <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_7.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_7.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_7.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_8.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_8.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_8.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_9.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_9.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_9.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_10.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_10.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_10.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_11.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_11.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_11.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_12.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_12.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_12.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_13.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_13.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_13.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_14.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_14.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_14.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
           <div class="col-md-4 ftco-animate">
             <a href="images/menu/menu_15.webp" class="ftco-thumbnail image-popup">
-              <img src="images/menu/menu_15.webp" alt="Tariq abu jbarah" class="img-fluid">
+              <img src="images/menu/menu_15.webp" alt="Tariq abu jbarah" class="img-fluid gallery-img">
             </a>
           </div>
 
@@ -371,7 +413,17 @@
     <div id="map"></div>
     -->
     <!-- END section -->
-
+    <div class="our-location py-3">
+      <div class="container">
+          <div class="head-with-border">
+            <h2 class="display-4 text-center py-5">Our Location</h2>
+          </div>
+          <div class="my-location">
+              <!--The div element for the map -->
+              <div id="map"></div>
+          </div>
+      </div>
+    </div>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -383,7 +435,7 @@
                   <h2 class="ftco-heading-2 font-normal">The Restaurant</h2>
                   <ul class="list-unstyled">
                     <li><a href="#section-home" class="py-2 d-block">Home</a></li>
-                    <li><a href="#section-about" class="py-2 d-block">About</a></li>
+                    <li><a href="#section-ourstory" class="py-2 d-block">About</a></li>
                     <li class="d-none"><a href="#" class="py-2 d-block">Offer</a></li>
                     <li><a href="#section-branches" class="py-2 d-block">Branches</a></li>
                     <li class="d-none"><a href="#section-ceo" class="py-2 d-block">CEO's Message</a></li>
@@ -401,6 +453,7 @@
                     <li class="py-2 d-block">behind Gulan Tower</li>
                     <li class="py-2 d-block"><i class="fas fa-phone"></i>+964 751 292 9292</li>
                     <li class="py-2 d-block"><i class="fas fa-phone"></i>+964 772 929 2939</li>
+                    <li class="py-2 d-block"><i class="mr-2 fas fa-envelope"></i>info@tariqabujbarah.com</li>
                   </ul>
                 </div>
               </div>
@@ -419,7 +472,7 @@
         </div>
         <div class="d-flex ftco-animate justify-content-between">
           <div class="col-md justify-content-start ">
-            <p> Food Investment Chain Tariq Abu Jbarah  &copy; 2020. All Rights Reserved. </p>
+            <p> Food Investment Chain Tariq Abu Jbarah  &copy; 2023. All Rights Reserved. </p>
           </div>
           <div class="col-md justify-content-end made-by">
             <p> Made <span class="icon-heart text-danger"></span>  by <a href="https://www.facebook.com/SaeedMeta/">Saeed Mawed</a></p>
@@ -523,7 +576,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
 
-    <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
 
     <script src="js/jquery.animateNumber.min.js"></script>
@@ -531,7 +583,6 @@
     <script src="js/swiper.min.js"></script>
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&callback=initMap"></script>
     <script src="js/google-map.js"></script>
 
     <script src="js/main.js"></script>
@@ -569,6 +620,39 @@
     },
 });
   </script>
+
+  <script>
+    $(".gallery-img").hover(function(){
+      $( ".gallery-img" ).css( "opacity", ".1" );
+    });
+    $(".gallery-img").mouseout(function(){
+      $( ".gallery-img" ).css( "opacity", ".85" ).css("transition","all 1.25s");
+    });
+  </script>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var uluru = {
+            lat: 36.21240563696262,
+            lng: 43.994561068719946
+        };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById("map"), {
+            zoom: 15,
+            center: uluru
+        });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8DUEUYfD9OevSLrmBV7pO2QD6Ragnkc4&callback=initMap">
+</script>
 
   </body>
 </html>
